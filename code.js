@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", function(){
         inp.focus();
         por.innerHTML = '<span style="background-color:white;width: '+0+'%;"></span><span style="background-color:blue;width: '+100+'%;"></span><span style="background-color:white;width: '+0+'%;"></span>';
         do{
-            player = prompt("saisie votre nom : ");
+            player = prompt("enter your name : ");
             console.log(player);
         }while(player == '');
-        p.innerHTML = "<strong>Bienvenue <em> "+player+" </em></strong>";
-        a.innerHTML = "changer le nom";
+        p.innerHTML = "<strong>Welcome <em> "+player+" </em></strong>";
+        a.innerHTML = "change the name";
     })
     btn.addEventListener("click", function(){
         var nb_saisire = inp.value;
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function(){
         tentative++;
         if( nb_saisire == nb_devenir){
             b.innerHTML = "";
-            alert("Bravo, vous avez trové le nomber cherché aprés "+tentative+" tentatives");
+            alert("Well done, you found the number you were looking for  "+tentative+" attempts");
             inp.disabled=true;
             btn.disabled=true;
             btn1.disabled=false;
@@ -60,14 +60,14 @@ document.addEventListener("DOMContentLoaded", function(){
                 b.innerHTML = "";
                 v_max = nb_saisire;
                 v_max2 = 100-v_max;
-                alert("Le nombre cherché est plus ptit");
+                alert("The number sought is smaller");
             }else if(nb_saisire == ''){
                 b.innerHTML = "";
-                b.innerHTML = "adekhal xi ra9em assahbi";
+                b.innerHTML = "You must enter a number";
                 tentative--;
             }else if(nb_saisire < nb_devenir){
                 b.innerHTML = "";
-                alert("Le nombre cherché est plus grand");
+                alert("The number sought is greater");
                 v_min = nb_saisire;
             }
             dif = v_max-v_min;
@@ -81,8 +81,8 @@ document.addEventListener("DOMContentLoaded", function(){
         if(test_a){
             delete classement[player];
         }
-        player = prompt("saisie votre nom : ");
-        p.innerHTML = "<strong>Bienvenue <em> "+player+" </em></strong>";
+        player = prompt("enter your name : ");
+        p.innerHTML = "<strong>Welcome <em> "+player+" </em></strong>";
         if(test_a){
             classement[player] = tentative;
             afficher(classement);

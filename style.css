@@ -15,7 +15,7 @@ body{
 	background-color: var(--color-bg);
     padding-top: 10px;
     font-size: larger;
-	background-image: url(./noise.png);
+	background-image: url(png/noise.png);
 }
 main{
     margin: auto;
