@@ -1,0 +1,144 @@
+@keyframes grain {
+    0%, 100% { transform:translate(0, 0); }
+    10% { transform:translate(-5%, -10%); }
+    20% { transform:translate(-15%, 5%); }
+    30% { transform:translate(7%, -25%); }
+    40% { transform:translate(-5%, 25%); }
+    50% { transform:translate(-15%, 10%); }
+    60% { transform:translate(15%, 0%); }
+    70% { transform:translate(0%, 15%); }
+    80% { transform:translate(3%, 35%); }
+    90% { transform:translate(-10%, 10%); }
+}
+body{
+	--color-bg: #f8ecde;
+	background-color: var(--color-bg);
+    padding-top: 10px;
+    font-size: larger;
+	background-image: url(./noise.png);
+}
+main{
+    margin: auto;
+    width: 1300px;
+}
+main::before{
+	animation: grain 8s steps(10) infinite;
+	background-image: url(./noise.png);
+	opacity: 0.6;
+	position: fixed;
+}
+header{
+    text-align: center;
+    margin: auto;
+    width: 95%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+}
+table{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+thead{
+    background-color: black;
+    color: blanchedalmond;
+}
+th{
+    text-align: center;
+    width: 32%;
+}
+td{
+    border-bottom: 1px solid black;
+    color: black;
+    text-align: center;
+    width: 32%;
+}
+.container{
+    float: left;
+    width: 68%;
+    height: 450px;
+    margin-top: 30px;
+    padding: 0%;
+    border-right: 1px solid;
+}
+#view{
+    margin-top: 30px;
+    width: 29%;
+    margin-right: 1%;
+    float: right;
+}
+div{
+    text-align: center;
+    margin-bottom: 40px;
+}
+div button{
+    width: 90%;
+    height: 42px;
+    margin-top: 40px;
+}
+nav p{
+    height: 35px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+    padding-bottom: 0% ;
+    text-align: center;
+}
+div input{
+    width: 70%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input[type=number]{
+    text-align: center;
+    height: 30px;
+    margin-bottom: 3px;
+}
+#navbi{
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 0px;
+    height: 75px;
+}
+nav{
+    width: 60%;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 3px;
+}
+#navem em{
+    float: left;
+    margin-left: 0%;
+    width: 9.09%;
+}
+#nav{
+    width: 55%;
+    padding-left: 0%;
+    padding-right: 0%;
+    height: 10px;
+    margin-bottom: 40px;
+    border: 1px solid;
+    background-color: white;
+}
+span{
+    border: 0px solid;
+    height: 10px;
+    float: left;
+    padding: 0%;
+}
+nav p strong em{
+    color: rgb(129, 32, 32);
+}
+b{
+    font-size: 70%;
+    color: red;
+    margin-bottom: 15px;
+}
+a{
+    font-size: 70%;
+    padding-top: 0%;
+    margin-top: 0%;
+}
